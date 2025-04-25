@@ -21,7 +21,7 @@ import os
 
 app = Flask(__name__)
 
-configuration = Configuration(access_token=os.getenv("CHANNEL_ACCESS_TOKEN")),
+configuration = Configuration(access_token=os.getenv("CHANNEL_ACCESS_TOKEN"))
 line_handler = WebhookHandler(os.getenv("CHANNEL_SECRET"))
 
 
